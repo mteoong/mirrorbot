@@ -1,6 +1,7 @@
 import fs from "fs";
 import yaml from "yaml";
 import { MirrorConfig } from "./mirror";
+require('dotenv').config();
 
 export class Config {
    private token: string;
@@ -12,7 +13,7 @@ export class Config {
       const file = fs.readFileSync(path, "utf-8");
       const config = yaml.parse(file);
 
-      this.token = config.token;
+      this.token = process.env.TOKEN!;
       this.status = config.status;
       this.logMessage = config.logMessage;
 
