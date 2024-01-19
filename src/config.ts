@@ -13,6 +13,12 @@ export class Config {
       const file = fs.readFileSync(path, "utf-8");
       const config = yaml.parse(file);
 
+      if ('TOKEN' in process.env) {
+        console.log("Env var is set:", process.env.TOKEN)
+      } else {
+        console.log("Env var IS NOT SET")
+      }
+
       this.token = process.env.TOKEN!;
       this.status = config.status;
       this.logMessage = config.logMessage;
