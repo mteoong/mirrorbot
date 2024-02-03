@@ -18,7 +18,7 @@ mirrors:
    # Every option is optional and can be removed from this file if not required.
    1:
       channelIds:
-         - "1197986392471502991"
+         - "951664031092047882"
       webhookUrls:
          - "https://discord.com/api/webhooks/1197987122544660501/4NMYC6nr_-T-LvfgvDXnGVGh9gutvL-mVkTh7RFDNh1WiD-9v4RQZoLACiZlFf5W3-0x"
       ignoredUserIds:
