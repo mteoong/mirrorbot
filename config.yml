@@ -22,7 +22,71 @@ mirrors:
       webhookUrls:
          - "https://discord.com/api/webhooks/1197987122544660501/4NMYC6nr_-T-LvfgvDXnGVGh9gutvL-mVkTh7RFDNh1WiD-9v4RQZoLACiZlFf5W3-0x"
       ignoredUserIds:
+         - ""
       ignoredRoleIds:
+         - ""
+      requirements:
+         minEmbedsCount: 0
+         minContentLength: 0
+         minAttachmentsCount: 0
+      options:
+         useWebhookProfile: false
+         removeAttachments: false
+         mirrorMessagesFromBots: true
+         mirrorReplyMessages: true
+         mirrorMessagesOnEdit: false
+      replacements:
+   2:
+      channelIds:
+         - "1198355146208452609"
+      webhookUrls:
+         - "https://discordapp.com/api/webhooks/1203140496201879552/KdSm0Po8R0V3EnYW5NRlHDXN8czabkJxBDm4n_AZr0IU9e3Du2MHkunlE1P-YTXD3INB"
+      ignoredUserIds:
+         - ""
+      ignoredRoleIds:
+         - ""
+      requirements:
+         minEmbedsCount: 0
+         minContentLength: 0
+         minAttachmentsCount: 0
+      options:
+         useWebhookProfile: false
+         removeAttachments: false
+         mirrorMessagesFromBots: true
+         mirrorReplyMessages: true
+         mirrorMessagesOnEdit: false
+      replacements:
+   #cjay
+   3:
+      channelIds:
+         - "1021665564688666705"
+      webhookUrls:
+         - "https://discordapp.com/api/webhooks/1203140941695942737/UCaMKY7cBA0UTcO7UNsjWZGfgQcVCZitkR-SlRqwxjpRipsgy6k9yJALpxrSCV22lzB-"
+      ignoredUserIds:
+         - ""
+      ignoredRoleIds:
+         - ""
+      requirements:
+         minEmbedsCount: 0
+         minContentLength: 0
+         minAttachmentsCount: 0
+      options:
+         useWebhookProfile: false
+         removeAttachments: false
+         mirrorMessagesFromBots: true
+         mirrorReplyMessages: true
+         mirrorMessagesOnEdit: false
+      replacements:
+   #matt   
+   4:
+      channelIds:
+         - "1102049925904203796"
+      webhookUrls:
+         - "https://discordapp.com/api/webhooks/1203141215361568768/5R9vztKpteoZ28GupbrMI0NCGzBa3okTty1f60C_kWjdChd5gwMIwBynSXjT-NVc53ga"
+      ignoredUserIds:
+         - ""
+      ignoredRoleIds:
+         - ""
       requirements:
          minEmbedsCount: 0
          minContentLength: 0
