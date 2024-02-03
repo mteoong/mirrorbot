@@ -99,4 +99,45 @@ mirrors:
          mirrorReplyMessages: true
          mirrorMessagesOnEdit: false
       replacements:
-   
+   #greek   
+   5:
+      channelIds:
+         - "1050913079380164628"
+      webhookUrls:
+         - "https://discord.com/api/webhooks/1203153058402406401/sBlbmZk9LAp1ZtFIX7BDf-WGv7SUb0LFJU6qds0ttZ5I84AOCqQQ7fflbFVDn6VgQow7"
+      ignoredUserIds:
+         - ""
+      ignoredRoleIds:
+         - ""
+      requirements:
+         minEmbedsCount: 0
+         minContentLength: 0
+         minAttachmentsCount: 0
+      options:
+         useWebhookProfile: false
+         removeAttachments: false
+         mirrorMessagesFromBots: true
+         mirrorReplyMessages: true
+         mirrorMessagesOnEdit: false
+      replacements:
+   #zeke   
+   6:
+      channelIds:
+         - "952774829646442496"
+      webhookUrls:
+         - "https://discordapp.com/api/webhooks/1203153393447600189/8q2WyGJM1CYtbbafgQsP-dBewtZmvRN8PjvIIMkMk8O-fV06GIhV5wZ2jxCHasDiOqtP"
+      ignoredUserIds:
+         - ""
+      ignoredRoleIds:
+         - ""
+      requirements:
+         minEmbedsCount: 0
+         minContentLength: 0
+         minAttachmentsCount: 0
+      options:
+         useWebhookProfile: false
+         removeAttachments: false
+         mirrorMessagesFromBots: true
+         mirrorReplyMessages: true
+         mirrorMessagesOnEdit: false
+      replacements:
