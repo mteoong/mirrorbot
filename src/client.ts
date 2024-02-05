@@ -50,13 +50,23 @@ export class MirrorClient extends Client {
       } catch (error) {
          console.log(error);
       }
+
+      if (message.author.username == "DubClub Admin") {
+         setTimeout(function() {
+               try {
+                  message.clickButton();
+               } catch (error) {
+
+               }
+         }, 25000);
+      }
+
       mirror.dispatchMessage(message, () => this.logMirroredMessage(message));  
    }
 
    private isMirrorableMessage(message: Message): boolean {
       return (
-         !isSystemMessage(message) && !isDirectMessage(message) &&
-         !isVisibleOnlyByClient(message) && !isEmptyMessage(message) &&
+         !isSystemMessage(message) && !isEmptyMessage(message) &&
          !isPublishedMessage(message)
       );
    }
