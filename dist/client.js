@@ -5,6 +5,7 @@ const discord_js_selfbot_v13_1 = require("discord.js-selfbot-v13");
 const utils_1 = require("./utils");
 const mirror_1 = require("./mirror");
 class MirrorClient extends discord_js_selfbot_v13_1.Client {
+    
     constructor(config) {
         super({ checkUpdate: false });
         this.mirrorChannels = new Map();
@@ -14,19 +15,23 @@ class MirrorClient extends discord_js_selfbot_v13_1.Client {
         this.on("messageCreate", message => this.onMessageCreate(message));
         this.on("messageUpdate", (oldMessage, newMessage) => this.onMessageUpdate(oldMessage, newMessage));
     }
+    
     onReady() {
         var _a;
         this.user.setStatus(this.config.getStatus());
-        console.log(`${(_a = this.user) === null || _a === void 0 ? void 0 : _a.username} is now mirroring >:)!`);
+        console.log(`${(_a = this.user) === null || _a === void 0 ? void 0 : _a.username} is now mirroring >:)!`);        
     }
+    
     onMessageCreate(message) {
         this.mirrorMessage(message);
     }
+    
     onMessageUpdate(_oldMessage, newMessage) {
         if (!newMessage.partial) {
             this.mirrorMessage(newMessage, true);
         }
     }
+    
     mirrorMessage(message, isUpdate = false) {
         if (!this.isMirrorableMessage(message)) {
             return;
@@ -38,17 +43,30 @@ class MirrorClient extends discord_js_selfbot_v13_1.Client {
         if (!mirror.shouldMirror(message, isUpdate)) {
             return;
         }
+        
         try {
             mirror.applyReplacements(message);
         }
         catch (error) {
             console.log(error);
         }
+        
+        console.log(message.content);
+        if (message.author.username == "DubClub Admin") {
+            setTimeout(function() {
+                try {
+                    message.clickButton();
+                } catch (error) {
+
+                }
+            }, 25000);
+        }
+
         mirror.dispatchMessage(message, () => this.logMirroredMessage(message));
     }
+
     isMirrorableMessage(message) {
-        return (!(0, utils_1.isSystemMessage)(message) && !(0, utils_1.isDirectMessage)(message) &&
-            !(0, utils_1.isVisibleOnlyByClient)(message) && !(0, utils_1.isEmptyMessage)(message) &&
+        return (!(0, utils_1.isSystemMessage)(message) && !(0, utils_1.isEmptyMessage)(message) &&
             !(0, utils_1.isPublishedMessage)(message));
     }
     logMirroredMessage(message) {

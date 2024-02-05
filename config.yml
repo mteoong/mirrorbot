@@ -16,6 +16,7 @@ logMessage: "[%date%] Mirrored @%author%'s message from %server% #%channel%."
 mirrors:
    # The following contains a mirror with its options.
    # Every option is optional and can be removed from this file if not required.
+   #Racha
    1:
       channelIds:
          - "951664031092047882"
@@ -36,7 +37,11 @@ mirrors:
          mirrorReplyMessages: true
          mirrorMessagesOnEdit: false
       replacements:
-   #propfessor   
+         1:
+            replace: "@everyone"
+            with: "<@&1203561460328824842>"
+            where: "everywhere"
+   #Professor Picks   
    2:
       channelIds:
          - "1198355146208452609"
@@ -57,6 +62,22 @@ mirrors:
          mirrorReplyMessages: true
          mirrorMessagesOnEdit: false
       replacements:
+         1:
+            replace: "@everyone"
+            with: "<@&1203566449239785502>"
+            where: "everywhere"
+         2:
+            replace: "<@&1109563652736045071>"
+            with: ""
+            where: "everywhere"
+         3:
+            replace: "<@&1109563837453189241>"
+            with: ""
+            where: "everywhere"
+         4:
+            replace: "<@&1198358782460317796>"
+            with: ""
+            where: "everywhere"      
    #cjay
    3:
       channelIds:
@@ -78,6 +99,10 @@ mirrors:
          mirrorReplyMessages: true
          mirrorMessagesOnEdit: false
       replacements:
+         1:
+            replace: "1113487492528754748"
+            with: "1203566515878891591"
+            where: "everywhere"
    #matt   
    4:
       channelIds:
@@ -99,6 +124,11 @@ mirrors:
          mirrorReplyMessages: true
          mirrorMessagesOnEdit: false
       replacements:
+         1:
+            replace: "1102049925199568906"
+            with: "1203570316471701524"
+            where: "everywhere" 
+      
    #greek   
    5:
       channelIds:
@@ -120,12 +150,16 @@ mirrors:
          mirrorReplyMessages: true
          mirrorMessagesOnEdit: false
       replacements:
+         1:
+            replace: "1050914872134729778"
+            with: "1203570595758080031"
+            where: "everywhere" 
    #zeke   
    6:
       channelIds:
          - "952774829646442496"
       webhookUrls:
-         - "https://discordapp.com/api/webhooks/1203153393447600189/8q2WyGJM1CYtbbafgQsP-dBewtZmvRN8PjvIIMkMk8O-fV06GIhV5wZ2jxCHasDiOqtP"
+         - "https://discord.com/api/webhooks/1203153393447600189/8q2WyGJM1CYtbbafgQsP-dBewtZmvRN8PjvIIMkMk8O-fV06GIhV5wZ2jxCHasDiOqtP"
       ignoredUserIds:
          - ""
       ignoredRoleIds:
@@ -141,3 +175,36 @@ mirrors:
          mirrorReplyMessages: true
          mirrorMessagesOnEdit: false
       replacements:
+         1:
+            replace: "952781652063551580"
+            with: "1203582412714418246"
+            where: "everywhere"
+         2:
+            replace: "<@&1086063329455394927>"
+            with: ""
+            where: "everywhere"
+#cjay
+   7:
+      channelIds:
+         - "1199433351426224290"
+      webhookUrls:
+         - "https://discord.com/api/webhooks/1203881371987083267/H5E1DMHNrODpRsWzgEOZV_VV5KqsCJUqosYkXCfoRTjAmhNoo6mcjYdcCYIia5uWUH69"
+      ignoredUserIds:
+         - ""
+      ignoredRoleIds:
+         - ""
+      requirements:
+         minEmbedsCount: 0
+         minContentLength: 0
+         minAttachmentsCount: 0
+      options:
+         useWebhookProfile: false
+         removeAttachments: false
+         mirrorMessagesFromBots: true
+         mirrorReplyMessages: true
+         mirrorMessagesOnEdit: false
+      replacements:
+         1:
+            replace: "1200237410672455780"
+            with: "1203882126622072853"
+            where: "everywhere"
